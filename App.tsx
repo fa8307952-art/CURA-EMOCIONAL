@@ -28,7 +28,8 @@ import {
   CalendarDays,
   Users,
   Target,
-  Sun
+  Sun,
+  BrainCircuit
 } from 'lucide-react';
 
 // --- Constants ---
@@ -127,13 +128,13 @@ export default function App() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-rose-100 text-rose-600 font-bold text-sm mb-8 animate-pulse border border-rose-200 shadow-sm uppercase tracking-widest">
               <Sparkles size={16} />
-              Cura do Feminino em 30 Dias
+              Cura do Feminino em 21 Dias
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-800 leading-tight mb-8">
               Reorganize emoções, fortaleça sua identidade e <span className="italic text-rose-600">sustente suas decisões sem culpa.</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed mb-12 max-w-3xl mx-auto font-medium">
-              O mapa completo para resgatar sua essência feminina e viver com plenitude através de um método validado de 30 dias.
+              O mapa completo para resgatar sua essência feminina e viver com plenitude através de um método validado de 21 dias.
             </p>
             <button 
               onClick={handleCheckout}
@@ -173,7 +174,7 @@ export default function App() {
                 <div className="bg-rose-50 p-6 rounded-2xl border-l-4 border-rose-400">
                   <p className="text-rose-800 font-medium italic">O mundo te ensinou a ser útil, mas esqueceu de te ensinar a ser VOCÊ.</p>
                 </div>
-                <p>Nos próximos 30 dias, você terá o mapa completo para reorganizar sua estrutura emocional e resgatar sua voz.</p>
+                <p>Nos próximos 21 dias, você terá o mapa completo para reorganizar sua estrutura emocional e resgatar sua voz.</p>
               </div>
             </div>
           </div>
@@ -250,7 +251,7 @@ export default function App() {
               </h2>
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                 <p>
-                  O <strong>Guia de 30 Dias para Cura do Feminino</strong> não é apenas mais um e-book. É uma metodologia viva, baseada em anos de prática clínica e estudos sistêmicos, desenhada para mulheres que não têm tempo a perder.
+                  O <strong>Guia de 21 Dias para Cura do Feminino</strong> não é apenas mais um e-book. É uma metodologia viva, baseada em anos de prática clínica e estudos sistêmicos, desenhada para mulheres que não têm tempo a perder.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                   <div className="flex items-start gap-3">
@@ -426,11 +427,54 @@ export default function App() {
         </div>
       </section>
 
+      {/* DR MAXWELL MALTZ & 21 DAYS SECTION */}
+      <section className="py-24 bg-slate-50 border-y border-rose-100 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/3 flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-rose-200 rounded-[2.5rem] transform -rotate-6 scale-105 opacity-50"></div>
+                <img 
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/authors/1634935007i/90212._UX200_CR0,21,200,200_.jpg" 
+                  alt="Dr. Maxwell Maltz" 
+                  className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-[2rem] shadow-2xl relative z-10 grayscale-[30%]"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-white p-3 rounded-2xl shadow-lg z-20 flex items-center gap-2 border border-rose-50">
+                  <BrainCircuit className="text-rose-500" size={24} />
+                  <span className="text-xs font-bold text-slate-800 uppercase tracking-tighter">Ciência Comprovada</span>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-2/3">
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-800 mb-6 leading-tight">
+                A Ciência por trás dos <span className="text-rose-600 italic">21 Dias</span>
+              </h2>
+              <div className="space-y-4 text-lg text-slate-600 leading-relaxed">
+                <p>
+                  O Dr. Maxwell Maltz, renomado cirurgião plástico e psicólogo americano, popularizou a ideia de que o cérebro humano leva, no mínimo, <strong>21 dias para criar uma nova autoimagem e estabelecer um novo hábito</strong>.
+                </p>
+                <p>
+                  Ele descobriu que este é o período necessário para que as redes neurais se reorganizem, permitindo que o antigo "eu" inseguro dê lugar a uma nova identidade fortalecida.
+                </p>
+                <div className="bg-white p-6 rounded-2xl border-l-4 border-rose-400 shadow-sm mt-6">
+                  <p className="text-rose-800 font-medium italic">
+                    "21 dias é o tempo sagrado que a sua mente precisa para aceitar que a mudança não é apenas um evento, mas a sua nova realidade."
+                  </p>
+                </div>
+                <p className="mt-4">
+                  Por isso, nosso método é focado nessa janela crítica de 21 dias. Não é apenas uma leitura; é um <strong>treinamento neurológico e emocional</strong> desenhado para garantir que sua transformação seja definitiva.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* IMAGINE YOUR LIFE Section */}
       <section className="py-24 bg-rose-50 overflow-hidden relative border-y border-rose-100">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle subtitle="Dê permissão para sua mente viajar um pouco no futuro...">
-            Imagine Sua Vida Daqui a 30 Dias...
+            Imagine Sua Vida Daqui a 21 Dias...
           </SectionTitle>
           
           <div className="bg-white p-10 md:p-16 rounded-[3rem] shadow-xl border border-rose-100 relative z-10">
@@ -506,7 +550,7 @@ export default function App() {
       {/* Bonus Preview Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <SectionTitle subtitle="Além da jornada de 30 dias, você receberá bônus exclusivos para acelerar sua cura.">Bônus Exclusivos de Alto Valor</SectionTitle>
+          <SectionTitle subtitle="Além da jornada de 21 dias, você receberá bônus exclusivos para acelerar sua cura.">Bônus Exclusivos de Alto Valor</SectionTitle>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
              <div className="bg-white p-10 rounded-[2.5rem] shadow-xl border border-rose-100 flex flex-col items-center text-center group hover:bg-rose-50/50 transition-colors">
                 <div className="w-20 h-20 bg-rose-100 rounded-full flex items-center justify-center text-rose-500 mb-6 group-hover:scale-110 transition-transform">
@@ -557,7 +601,7 @@ export default function App() {
                 <div className="flex gap-4 items-start p-4 bg-rose-50 rounded-2xl border border-rose-100">
                   <CheckCircle2 className="text-rose-500 shrink-0 mt-1" />
                   <div>
-                    <span className="font-bold text-slate-800">Guia de 30 Dias para Cura do Feminino:</span> A jornada passo a passo para sua libertação emocional.
+                    <span className="font-bold text-slate-800">Guia de 21 Dias para Cura do Feminino:</span> A jornada passo a passo para sua libertação emocional.
                   </div>
                 </div>
                 <div className="flex gap-4 items-start p-4 bg-white rounded-2xl border border-rose-100">
@@ -637,7 +681,7 @@ export default function App() {
                 {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="currentColor" />)}
               </div>
               <p className="text-slate-700 italic leading-relaxed mb-8 text-lg font-serif">
-                "Nos primeiros 10 dias eu chorei muito. Mas não era tristeza, era libertação. Pela primeira vez em anos, senti que poderia me perdoar e seguir em frente. Hoje estou no dia 28 e sou outra mulher."
+                "Nos primeiros 10 dias eu chorei muito. Mas não era tristeza, era libertação. Pela primeira vez em anos, senti que poderia me perdoar e seguir em frente. Hoje estou no dia 21 e sou outra mulher."
               </p>
               <div className="flex items-center gap-4">
                 <img 
@@ -732,7 +776,7 @@ export default function App() {
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-rose-50">
             <FAQItem 
               question="Quanto tempo por dia preciso dedicar?"
-              answer="Entre 15-30 minutos diários são suficientes para realizar as leituras e exercícios propostos."
+              answer="Entre 15-30 minutos diários são suficientes para realizar as leituras e exercícios propostos ao longo dos 21 dias."
             />
             <FAQItem 
               question="Vou receber os bônus agora?"
